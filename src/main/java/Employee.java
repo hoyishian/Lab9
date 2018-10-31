@@ -10,8 +10,8 @@ public class Employee {
 
     /**
      * Constructor for initialization.
-     * @param name
-     * @param manager
+     * @param name is
+     * @param manager is
      */
     public Employee(final String name, final String manager) {
         this.name = name;
