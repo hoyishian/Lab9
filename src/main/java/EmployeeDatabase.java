@@ -64,7 +64,7 @@ public class EmployeeDatabase {
          */
     }
 
-    private int counter = 0;
+
     /**
      * Count the number of employees under this manager.
      * <p>
@@ -77,13 +77,13 @@ public class EmployeeDatabase {
         /*
          * Implement this function
          */
-        for (int i = 0; i < ; i++) {
-            if (employee.getManager() == employee.getName()) {
-
-            } else {
-
+        int counter = 0;
+        for (int i = 0; i < employees.size(); i++) {
+            if (employees.get(i).getManager().equals(employee.getName())) {
+                counter = counter + countEmployeesUnder(employees.get(i)) + 1;
             }
         }
+        return counter;
 
     }
 
